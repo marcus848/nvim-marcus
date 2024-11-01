@@ -40,4 +40,28 @@ return {
 		vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 	end
 	},
+-- Tema Tokio Night
+    {
+        'folke/tokyonight.nvim',
+    },
+
+    -- Tema Gruvbox
+    {
+        'morhetz/gruvbox',
+    },
+
+    -- Tema Nightfox
+    {
+        'EdenEast/nightfox.nvim',
+    },
+
+    -- Tema Dracula
+    {
+        'Mofiqul/dracula.nvim',
+    },
+
+    -- Tema Nord
+    {
+        'shaunsingh/nord.nvim',
+    },
 }
