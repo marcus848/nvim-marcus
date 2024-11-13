@@ -18,6 +18,7 @@ require("vim-options")
 require("remaps")
 require("lazy").setup("plugins")
 require("Comment").setup()
+vim.cmd("Copilot disable")
 
 vim.api.nvim_create_user_command('RunTheme', function(opts)
   local theme = opts.fargs[1]

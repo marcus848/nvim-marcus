@@ -40,28 +40,53 @@ return {
 		vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 	end
 	},
--- Tema Tokio Night
-    {
-        'folke/tokyonight.nvim',
-    },
 
-    -- Tema Gruvbox
-    {
-        'morhetz/gruvbox',
-    },
+	-- add markdown views
+	{
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreview", "MarkdownPreviewStop", "MarkdownPreviewToggle" },
+		build = "cd app && npm install",
+		init = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	},
 
-    -- Tema Nightfox
-    {
-        'EdenEast/nightfox.nvim',
-    },
 
-    -- Tema Dracula
-    {
-        'Mofiqul/dracula.nvim',
-    },
+	{
+		"ellisonleao/glow.nvim", 
+		config = true, 
+		cmd = "Glow"
+	},
 
-    -- Tema Nord
-    {
-        'shaunsingh/nord.nvim',
-    },
+	{ "plasticboy/vim-markdown" },
+
+	{ "junegunn/vim-easy-align" },
+	
+	--############### TEMAS ################
+	-- Tema Tokio Night
+	{
+		'folke/tokyonight.nvim',
+	},
+
+	-- Tema Gruvbox
+	{
+		'morhetz/gruvbox',
+	},
+
+	-- Tema Nightfox
+	{
+		'EdenEast/nightfox.nvim',
+	},
+
+	-- Tema Dracula
+	{
+		'Mofiqul/dracula.nvim',
+	},
+
+	-- Tema Nord
+	{
+		'shaunsingh/nord.nvim',
+	},
+
 }
