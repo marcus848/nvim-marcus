@@ -41,6 +41,13 @@ return {
 	end
 	},
 
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		---@module "ibl"
+		---@type ibl.config
+		opts = {},
+	},
 	-- add markdown views
 	{
 		"iamcco/markdown-preview.nvim",
