@@ -19,6 +19,8 @@ require("lazy").setup("plugins")
 require("Comment").setup()
 vim.cmd("Copilot disable")
 
+vim.api.nvim_set_var('4', '<80>k1i^M#include "../incu<80>kblude;<80>kb/"^[:w^Mi^[')
+
 vim.api.nvim_create_user_command('RunTheme', function(opts)
   local theme = opts.fargs[1]
   local subtheme = opts.fargs[2] or ""
